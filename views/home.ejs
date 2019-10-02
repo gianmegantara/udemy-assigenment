@@ -1,0 +1,17 @@
+<%- include('./template/header.ejs') %>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="list-group col-md-6 ">
+                <a class="list-group-item list-group-item-dark">User List</a>
+                <% for (let datauser of user) { %>
+                <a class="list-group-item"><%= datauser.username %></a>
+                <% } %>
+                <a class="list-group-item">dummy</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<%- include('./template/footer.ejs') %>
